@@ -1,2 +1,2 @@
-# ZTNA
-ZTNA Custom Service Pages.
+# ZTNA.dataendure.github.io
+ZTNA Custom Service Pages for DataEndure.
