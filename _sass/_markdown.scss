@@ -1,0 +1,42 @@
+/* MARKDOWN */
+
+.markdown {
+    padding: 60px 100px;
+    margin-top: 100px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 600;
+    }
+
+    // Page Title
+    h2 {
+        text-align: center;
+        padding: 10px 30px 20px 30px;
+    }
+
+    h3, h4 {
+        padding-top: 1rem;
+    }
+
+    .updated {
+        margin-top: 40px;
+    }
+
+    &.legal {
+        img {
+            max-width: 67vw;
+        }
+    }
+
+}
+
+@media (max-width: 667px) {
+    .markdown {
+        padding: 60px 20px;
+    }
+}

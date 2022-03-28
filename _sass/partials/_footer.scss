@@ -1,0 +1,49 @@
+/* FOOTER */
+
+.page-footer {
+    background: $footer-color;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        color: #666;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        padding: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin: 0 13px;
+            &:hover svg path {
+                fill: #aaa;
+            }
+
+            svg path {
+                fill: #fff;
+                transition: all .25s ease-in-out;
+            }
+        }
+    }
+
+    @media (max-width: 667px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px 25px;
+
+        &__social {
+            margin-top: 20px;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+
+

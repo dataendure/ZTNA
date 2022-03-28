@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <div class="logo">
+    {% if page.section == 'white-logo' %} 
+      <a href="{{ "/" | relative_url }}"><img src="{{ "/assets/images/logo-white.png" | relative_url }}" height="38px" alt="logo" /></a>
+    {% else %}
+      <a href="{{ "/" | relative_url }}"><img src="{{ "/assets/images/logo@4x.png" | relative_url }}" height="36px" alt="logo" /></a>
+    {% endif %}
+  </div>
+</div>

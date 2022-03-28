@@ -1,0 +1,246 @@
+.what-is {
+	// absolute header 119px
+  position: relative;	
+  padding-top: 119px;
+
+  h1 {
+    font-size: 2rem;  	
+    font-weight: 700; 
+    padding-bottom: 1rem;       
+  }
+
+  h2 {
+  	font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;    	
+  }
+
+  h3 {
+    font-size: 1.5rem;  	
+  }
+
+  .hero {
+    padding-bottom: 2rem;
+    background-color: $white;
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 0;
+    }
+
+    .hero-img {
+      width: 100%;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      @include media-breakpoint-up(lg) {
+          width: 800px;
+          padding-bottom: 0;
+      }
+    }
+
+    h3 {
+    	padding-top: 1rem;
+    	color: $brand-primary;
+    }
+  }
+
+  .productive {
+    padding: 2rem 0;
+  	background-color: $dark-background;
+  	color: $white;
+
+    // https://stackoverflow.com/questions/27634023/add-circular-fading-opacity-vignette-effect-to-images-in-css
+		.productive-img-container {
+  		position: relative;
+
+  		&::after {
+		    content: "";
+		    position: absolute;
+		    top: 0; 
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+    		background: radial-gradient(circle, transparent 0%, $dark-background 70%);
+  		}
+
+	  	.productive-img {
+	  		width: 100%;
+	  	}
+	  }
+  }
+
+  .start {
+    padding: 4rem 0;
+
+  	.start-img {
+  		width: 80%;
+      padding-bottom: 2rem;
+      @include media-breakpoint-up(lg) {
+          width: 800px;
+          padding-bottom: 0;
+      }
+  	}
+
+  	.os-icons {
+  		padding-top: 1rem;
+	  	.os-button {
+	  		background-color: $black;
+	  		color: $white;
+	  		text-decoration: none;
+	  		display: inline-block;
+	  		width: 160px;
+	  		height: 60px;
+			  display: flex;
+			  align-items: center;
+			  padding: 6px 12px;
+			  margin: 12px;
+			  border-radius: 10px;
+			  .os-label {
+			  	margin: 0px auto;
+			  	img {
+			  		padding-right: 6px;
+			  	}
+			  }
+	  	}
+	  }
+  }
+
+  .privacy {
+  	padding-top: 4rem;
+  	background-color: $gray-200;
+
+  	.title {
+  		margin: 0 auto;
+  		width: 80%;
+      @include media-breakpoint-up(lg) {
+        width: 60%;
+      }  		
+  	}
+
+  	.track {
+      height: 100%;
+  		background-color: $white;
+  		border-radius: 10px;
+  		padding: 3rem 2rem 1rem 2rem;
+  		margin-top: 1rem;
+      text-align: center;
+      .heading {
+        img {
+          height: 85px;
+        }
+        h3 {
+          font-weight: 700;
+          padding: 1.5rem 0;
+        }        
+      }
+      .item {
+        padding-top: 1rem;
+        .item-heading {
+          font-size: 1.1rem;
+          font-weight: 600;
+          margin: 0.5rem 0;
+        }
+      }
+  	}
+
+    .bottom-divider {
+      background-image: linear-gradient(to top left, $dark-background 0%, $dark-background 50%, $gray-200 0%, $gray-200 0%);
+      height: 300px;
+      margin-top: -240px;
+    }    
+  }
+
+  #how, #how2 {
+    padding-top: 4rem;
+    background-color: $dark-background;
+    color: $white;
+
+
+    .options {
+      margin: 1rem 0;
+      @include media-breakpoint-up(lg) {     
+        margin: 0;  
+        padding: 0px 200px;
+      }
+      .nav {
+        border: 2px solid $gray-700;
+        border-radius: 5px;        
+      }
+      button {
+        width: 100%;
+        color: $brand-primary;
+        padding-top: 6px;
+        padding-bottom: 4px;
+        font-weight: 700;
+        &.active {
+          color: $white;
+        }
+        transition: background-color 0.5s ease-in;
+      }
+    }
+
+    .arch-img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      padding: 1rem;
+      @include media-breakpoint-up(lg) {
+        width: 760px;
+        padding: 0;
+      }
+    }
+
+    // override bootstraps
+    .accordion {
+      // align w arch img
+      @include media-breakpoint-up(lg) {
+        margin-top: 54px;
+      }      
+      color: $white;
+      .accordion-item {
+        margin: 1rem 0;
+        border: 2px solid $gray-700;
+        border-radius: 5px;
+      }
+      .accordion-button {
+        font-weight: 700;
+        color: $brand-primary;
+        background-color: transparent;
+        padding-top: 22px;
+        &::after {
+          fill: $brand-primary;
+        }
+        &:focus {
+          border: none;
+          box-shadow: none;
+        }
+        // word break on the "&"
+        br {
+          display: none;
+          @include media-breakpoint-up(lg) {
+            display: block;
+          }
+        }
+      }
+      .accordion-body {
+        font-size: 0.85rem;
+      }
+    }
+
+    .bottom-divider {
+      height: 100px;
+      background: linear-gradient($dark-background, $footer-color); 
+    }
+
+    .hide {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s linear 100ms, opacity 100ms;
+    }
+
+    .show {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s linear 0s, opacity 100ms;
+    }
+
+  }
+}

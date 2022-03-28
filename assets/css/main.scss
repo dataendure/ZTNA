@@ -1,0 +1,30 @@
+--- 
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "UTF-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+
+// Config
+@import "config";
+
+// Vendors
+@import "vendor/bootstrap/bootstrap.scss";
+//@import "vendor/bootstrap/bootstrap-utilities.scss";
+
+// general styles
+@import "common";
+
+// Fonts
+@import "fonts/open_sans"; 
+
+// Markdowm common
+@import "markdown";
+
+// Partials
+@import "partials/header";
+@import "partials/footer";
+
+// Pages
+@import "pages/what-is-banyan";

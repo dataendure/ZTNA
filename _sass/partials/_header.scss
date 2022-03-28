@@ -1,0 +1,21 @@
+/* COMMON HEADER */
+
+.page-header {
+    height: 119px;
+    background: #031828;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+
+    &__logo {
+        img {
+            display: block;
+            max-width: 156px;
+        }
+    }
+}
