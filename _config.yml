@@ -1,9 +1,9 @@
 title: DataEndure ZTNA powered by Banyan Security
-email: banyan@dataendure.com
+email: ztna@dataendure.com
 description: >- # this means to ignore newlines until "baseurl:"
   DataEndure ZTNA powered by Banyan Security
 
-baseurl: "/ztna"
+baseurl: "/"
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 linkedin: https://www.linkedin.com/company/dataendure/
