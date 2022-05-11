@@ -8,6 +8,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 linkedin: https://www.linkedin.com/company/dataendure/
 twitter: https://twitter.com/dataendure
+github: https://github.com
 
 exclude:
   - README.md
